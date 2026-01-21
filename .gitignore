@@ -1,0 +1,24 @@
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Simulation outputs / cache
+02_simulation/cache/
+02_simulation/logs/
+
+# Data analysis outputs
+04_analysis/plots/
+04_analysis/tables/
+
+# OS files
+.DS_Store
+Thumbs.db
