@@ -7,8 +7,6 @@ What I did:
 - Created folder skeleton
 - Initialized git repo
 - Added documentation templates
-- Started setting up ubuntu machine
 
 Next:
-- Set up and organize software on VM
-- Create roadmap for simulations and milestones
+- Begin parameterizing reactor model
