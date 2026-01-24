@@ -1,3 +1,10 @@
+geometry: 
+  fuel_radius: 0.39
+  clad_inner_radius: 0.40
+  clad_outer_radius: 0.46
+  pitch: 1.26
+
 settings:
-  particles: 1000
-  batches: 10
+  particles: 2000
+  batches: 30
+  inactive: 5
