@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <material id="10" name="UO2" depletable="true">
+    <density value="10.4" units="g/cm3"/>
+    <nuclide name="U235" ao="1.0"/>
+    <nuclide name="U238" ao="4.0"/>
+    <nuclide name="O16" ao="9.99621"/>
+    <nuclide name="O17" ao="0.00379"/>
+  </material>
+  <material id="11" name="Water">
+    <density value="1.0" units="g/cm3"/>
+    <nuclide name="H1" ao="1.99968852"/>
+    <nuclide name="H2" ao="0.00031148"/>
+    <nuclide name="O16" ao="0.999621"/>
+    <nuclide name="O17" ao="0.000379"/>
+  </material>
+  <material id="12" name="Zirconium cladding">
+    <density value="6.55" units="g/cm3"/>
+    <nuclide name="Zr90" ao="0.5145"/>
+    <nuclide name="Zr91" ao="0.1122"/>
+    <nuclide name="Zr92" ao="0.1715"/>
+    <nuclide name="Zr94" ao="0.1738"/>
+    <nuclide name="Zr96" ao="0.028"/>
+  </material>
+</materials>

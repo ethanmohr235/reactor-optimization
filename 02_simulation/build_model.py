@@ -29,8 +29,8 @@ def build_model(config):
 
     # Define a simple pin cell geometry
     fuel_radius = yml_geom["fuel_radius"]
-    clad_inner_radius = yml_geom["clad_inner_radius"]
-    clad_outer_radius = yml_geom["clad_outer_radius"]
+    clad_thickness = yml_geom["clad_thickness"]
+    gap = yml_geom["gap"]
     pitch = yml_geom["pitch"]
     half_pitch = pitch / 2
 
@@ -41,8 +41,8 @@ def build_model(config):
     ymax = openmc.YPlane(y0= half_pitch, boundary_type="reflective")
 
     fuel_surf = openmc.ZCylinder(r=fuel_radius)
-    clad_inner_surf = openmc.ZCylinder(r=clad_inner_radius)
-    clad_outer_surf = openmc.ZCylinder(r=clad_outer_radius)
+    clad_inner_surf = openmc.ZCylinder(r=fuel_radius + gap)
+    clad_outer_surf = openmc.ZCylinder(r=fuel_radius + gap + clad_thickness)
 
     fuel_region = (
         -fuel_surf

@@ -1,0 +1,9 @@
+geometry:
+  fuel_radius: 0.38
+  clad_thickness: 0.06
+  gap: 0.01
+  pitch: 1.26
+settings:
+  particles: 2000
+  batches: 30
+  inactive: 5
