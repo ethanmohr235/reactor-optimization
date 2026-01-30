@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<geometry>
+  <cell id="13" name="fuel_cell" material="13" region="-33 29 -30 31 -32" universe="5"/>
+  <cell id="14" name="clad_cell" material="15" region="33 -35 29 -30 31 -32" universe="5"/>
+  <cell id="15" name="water_cell" material="14" region="35 29 -30 31 -32" universe="5"/>
+  <surface id="29" type="x-plane" boundary="reflective" coeffs="-0.63"/>
+  <surface id="30" type="x-plane" boundary="reflective" coeffs="0.63"/>
+  <surface id="31" type="y-plane" boundary="reflective" coeffs="-0.63"/>
+  <surface id="32" type="y-plane" boundary="reflective" coeffs="0.63"/>
+  <surface id="33" type="z-cylinder" coeffs="0.0 0.0 0.36"/>
+  <surface id="35" type="z-cylinder" coeffs="0.0 0.0 0.43"/>
+</geometry>

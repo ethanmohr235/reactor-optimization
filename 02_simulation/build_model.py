@@ -1,5 +1,6 @@
 # Imports
 import openmc
+import numpy as np
 
 def build_model(config):
     # Get variables from the config file
@@ -86,11 +87,31 @@ def build_model(config):
         settings=settings
     )
 
-    # Add simplest possible tally for testing
-    tally = openmc.Tally(name="flux")
-    tally.scores = ["flux"]
+    # Tallies for flux and fission in the water and fuel
+    energy_bins = np.logspace(-5, 7, 200)  # eV
+    energy_filter = openmc.EnergyFilter(energy_bins)
 
-    tallies = openmc.Tallies([tally])
+    fuel_filter = openmc.CellFilter(fuel_cell)
+    water_filter = openmc.CellFilter(water_cell)
+
+    fuel_flux = openmc.Tally(name="fuel_flux_spectrum")
+    fuel_flux.filters = [fuel_filter, energy_filter]
+    fuel_flux.scores = ["flux"]
+
+    water_flux = openmc.Tally(name="water_flux_spectrum")
+    water_flux.filters = [water_filter, energy_filter]
+    water_flux.scores = ["flux"]
+
+    fission_spectrum = openmc.Tally(name="fission_energy")
+    fission_spectrum.filters = [fuel_filter, energy_filter]
+    fission_spectrum.scores = ["fission"]
+
+    tallies = openmc.Tallies([
+        fuel_flux,
+        water_flux,
+        fission_spectrum
+    ])
+    
     model.tallies = tallies
 
     # Ship it out to run.py

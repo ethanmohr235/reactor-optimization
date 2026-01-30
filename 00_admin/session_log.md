@@ -48,3 +48,16 @@ What I did:
 Next: 
 - Set up more automated analysis and organization
 - Consider future optimization problems
+
+## 2026-01-29 | Session 5
+
+Goal:
+- Set up the first experiment, correlating keff with fuel radius and moderation fraction
+
+What I did:
+- Demonstrated the increase in neutron energy as moderation decreases
+- Observed how the neutron energy spectrum changes in turn
+
+Next:
+- Try sweeping other variables
+- More sophisticated statistical analysis

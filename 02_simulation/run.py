@@ -15,7 +15,7 @@ import openmc
 def main():
 
     # Where is the config file?
-    config_path = Path("configs/fuel_radius_sweep_1.yml")
+    config_path = Path("configs/ex_01_moderation_fraction.yml")
 
     # Open the config file and load it
     with open(config_path) as f:

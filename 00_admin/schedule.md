@@ -4,5 +4,5 @@ Eight hours a week on normal weeks:
 4-6 pm on Fridays
 
 # Consistency Log
-Week of 1/19 -- Tu 2hr Th 2hr Fr 1.5hrs
-Week of 1/26 -- Tu 2hr
+Week of 1/19 -- Tu 2hr Th 2hr Fr 1.5hr
+Week of 1/26 -- Tu 2hr Th 1.5hr

@@ -1,0 +1,11 @@
+{
+  "fuel_radius": 0.38,
+  "clad_thickness": 0.06,
+  "pitch": 1.26,
+  "particles": 4000,
+  "batches": 30,
+  "inactive": 5,
+  "openmc_version": "0.15.3",
+  "keff_mean": 1.6620848482618857,
+  "keff_std": 0.005113805962184932
+}
