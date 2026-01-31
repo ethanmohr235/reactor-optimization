@@ -61,3 +61,14 @@ What I did:
 Next:
 - Try sweeping other variables
 - More sophisticated statistical analysis
+
+## 2026-01-30 | Session 6
+
+Goal:
+- Run more advanced analysis of previous experiment
+
+What I did:
+- Observed change in fission energy, neutron energy spectrum, and fission-causing neutrons over the sweep
+
+Next:
+- Continue analysis
