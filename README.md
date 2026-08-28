@@ -56,14 +56,6 @@ This repository contains Jupyter Notebooks covering:
 - Visualization scripts
 - Results and findings
 
-## 🔬 Methodology
-
-[Add details about your optimization approach, algorithms used, and key findings]
-
-## 📈 Results
-
-[Add summary of optimization results and improvements achieved]
-
 ## 🛠️ Dependencies
 
 - Python 3.x
